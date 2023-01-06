@@ -50,9 +50,3 @@ CREATE TABLE Dept_Manager(
  	PRIMARY KEY (Dept_No, Emp_No)
 );
  
-
--- drop table salaries
--- select * from dept_emp
--- delete from employees
-
-
