@@ -1,0 +1,51 @@
+Departments
+-
+Dept_No VARCVHAR PK
+Dept_Name VARCHAR
+
+
+Titles
+-
+Title_Id VARCHAR PK
+Title VARCHAR 
+
+
+
+Employees
+-
+Emp_No INTEGER PK 
+Emp_title_id varchar(10) FK >- Titles.Title_Id
+Birth_Date Date
+First_Name varchar(50) INDEX
+Last_Name varchar(50) INDEX
+Sex varchar(1)
+Hire_Date Date
+
+
+
+
+Dept_Emp
+-
+Emp_No INTEGER PK FK - Employees.Emp_No
+Dept_No VARCHAR PK FK >- Departments.Dept_No
+
+
+
+
+Salaries
+-
+Emp_No INTEGER PK FK - Employees.Emp_No
+Salary INTEGER 
+
+
+
+
+
+Dept_Manager
+-
+Dept_No VARCHAR PK FK >- Departments.Dept_No
+Emp_No INTEGER PK FK - Employees.Emp_No
+
+
+
+
