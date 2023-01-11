@@ -10,11 +10,11 @@
 
 ### Data Modeling
 Inspected the CSV files to understand the relationships between various tables. 
--- Two tables had just primary keys : Titles wirh title_id as pk, Departments and dept_no as pk
--- Employees tables had emp_no as PK and Emp_title_id as fk from titles table
--- Salaries table had emp_no as pk and fk both, from Employees table
--- Depy_Emp table had two columns both as FKs from Employees table and Departments table, defined a composite key as PK in this table
--- Dept_Manager had two columns both as FKs from Employees table and Departments table, also defined a composite key as PK in this table
+- Two tables had just primary keys : Titles wirh title_id as pk, Departments and dept_no as pk
+- Employees tables had emp_no as PK and Emp_title_id as fk from titles table
+- Salaries table had emp_no as pk and fk both, from Employees table
+- Depy_Emp table had two columns both as FKs from Employees table and Departments table, defined a composite key as PK in this table
+- Dept_Manager had two columns both as FKs from Employees table and Departments table, also defined a composite key as PK in this table
 
 Based on above, an Entity Relationship Diagram of the tables was sketched. To create the sketch, web tool - QuickDBD was used.
 
